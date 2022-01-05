@@ -69,5 +69,5 @@ function Rating({ value, text, color }) {
 
 Rating.defaultProps = {
   color: "#f8e825",
-};
+};                       //sets the default color of the props
 export default Rating;

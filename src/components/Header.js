@@ -1,13 +1,19 @@
 import React from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
+import NavbarCollapse from "react-bootstrap/esm/NavbarCollapse";
 import { LinkContainer } from "react-router-bootstrap";
+import {Link, useHistory} from 'react-router-dom';
 function Header() {
+  const history=useHistory();
+  const handleClick=()=>{
+
+  }
   return (
     <header>
       <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
         <Container>
-          <LinkContainer to="/">
-            <Navbar.Brand>E-Commerce</Navbar.Brand>
+          <LinkContainer to='/'>
+            <Navbar.Brand >E-Commerce</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
